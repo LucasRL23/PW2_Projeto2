@@ -3,6 +3,7 @@ import { NavLink, Route, Routes, Link } from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import Ler from './pages/Ler';
 import Criar from './pages/Criar';
+import BuscarFilme from './pages/BuscarFilme';
 
 export default function App() {
   return <>
@@ -16,7 +17,9 @@ export default function App() {
       <Route path="/" element={<Inicio />} />
       <Route path="/ler/:id" element={<Ler />} />
       <Route path="/criar" element={<Criar />} />
-      <Route path="*" element={<section><h2>Página em construção</h2><Link to="/">Voltar ao início</Link></section>} />
+      <Route path="/alterar" element={<BuscarFilme key="alterar" />} />
+      <Route path="/apagar" element={<BuscarFilme key="apagar" apagar />} />
+      <Route path="*" element={<section><h2>Página não encontrada</h2><Link to="/">Voltar ao início</Link></section>} />
     </Routes></main>
     <footer className="container">Programação para Web II · Catálogo de filmes</footer>
   </>;

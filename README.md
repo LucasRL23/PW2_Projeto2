@@ -1,5 +1,7 @@
 # PW2_Projeto2 — Catálogo de filmes
 
+Site publicado: https://pw2-projeto2.vercel.app
+
 Avaliação 2 de Programação para Web II. Aplicação React com React Router DOM e Axios, preparada para uma API REST online (MockAPI).
 
 ## Executar
@@ -54,4 +56,4 @@ Importe este repositório como projeto Vite. Configure `VITE_API_URL` com a mesm
 
 ## Estado inicial
 
-Código das cinco páginas implementado. MockAPI configurado; operações POST, GET, PUT e DELETE verificadas com um registro temporário, removido após o teste. A URL pública do recurso está em `.env.example`. Publicação no Vercel pendente.
+Código das cinco páginas implementado e publicado no Vercel. MockAPI configurado; operações POST, GET, PUT e DELETE verificadas com um registro temporário, removido após o teste. Cadastro e listagem também verificados pela interface publicada. A URL pública do recurso está em `.env.example`.

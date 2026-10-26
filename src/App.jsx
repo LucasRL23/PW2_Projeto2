@@ -1,5 +1,8 @@
 import React from 'react';
 import { NavLink, Route, Routes, Link } from 'react-router-dom';
+import Inicio from './pages/Inicio';
+import Ler from './pages/Ler';
+import Criar from './pages/Criar';
 
 export default function App() {
   return <>
@@ -10,7 +13,9 @@ export default function App() {
       </nav>
     </div></header>
     <main className="container"><Routes>
-      <Route path="/" element={<section><h2>Meus filmes</h2><p>Catálogo em construção.</p></section>} />
+      <Route path="/" element={<Inicio />} />
+      <Route path="/ler/:id" element={<Ler />} />
+      <Route path="/criar" element={<Criar />} />
       <Route path="*" element={<section><h2>Página em construção</h2><Link to="/">Voltar ao início</Link></section>} />
     </Routes></main>
     <footer className="container">Programação para Web II · Catálogo de filmes</footer>

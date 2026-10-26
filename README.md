@@ -54,4 +54,4 @@ Importe este repositório como projeto Vite. Configure `VITE_API_URL` com a mesm
 
 ## Estado inicial
 
-Código das cinco páginas implementado. Configuração e teste com MockAPI real e publicação no Vercel pendentes.
+Código das cinco páginas implementado. MockAPI configurado; operações POST, GET, PUT e DELETE verificadas com um registro temporário, removido após o teste. A URL pública do recurso está em `.env.example`. Publicação no Vercel pendente.
